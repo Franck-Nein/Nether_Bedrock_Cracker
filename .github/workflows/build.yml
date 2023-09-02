@@ -37,6 +37,7 @@ jobs:
         uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
         with:
+          tag_name: test
           path: artifacts-dl
       - name: Move files from sub folders into one folder
         run: |
